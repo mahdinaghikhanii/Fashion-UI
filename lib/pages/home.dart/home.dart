@@ -25,7 +25,7 @@ class HomePages extends StatelessWidget {
             padding: EdgeInsets.only(right: 16.0),
             child: CircleAvatar(
               radius: 20,
-              foregroundImage: AssetImage("assets/images/0.jpg"),
+              foregroundImage: AssetImage("assets/images/me.jpg"),
               backgroundColor: AppColors.tertiaryColor,
             ),
           ),
@@ -62,7 +62,7 @@ class HomePages extends StatelessWidget {
                                         color: AppColors.tertiaryColor,
                                         fontWeight: FontWeight.w600)),
                             TextSpan(
-                                text: "15% ",
+                                text: "20% ",
                                 style: Theme.of(context)
                                     .textTheme
                                     .headline4
@@ -93,19 +93,23 @@ class HomePages extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ProductView(
-                      imagePath: "assets/images/1.jpg",
-                      title: "Denim Jacket",
-                      price: "39.99",
-                    ),
-                    ProductView(
-                        imagePath: "assets/images/3.jpg",
-                        title: "Pleated Pants",
-                        price: '29.55'),
-                  ],
+                const SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      ProductView(
+                        imagePath: "assets/images/1.jpg",
+                        title: "Denim Jacket",
+                        price: "39.99",
+                      ),
+                      SizedBox(width: 20),
+                      ProductView(
+                          imagePath: "assets/images/3.jpg",
+                          title: "Pleated Pants",
+                          price: '29.55'),
+                    ],
+                  ),
                 ),
                 const SizedBox(
                   height: 20,
