@@ -1,6 +1,8 @@
 import 'package:fashion_ui/pages/home.dart/home.dart';
 import 'package:flutter/material.dart';
 
+import 'product_screan/product_screen.dart';
+
 class RootPage extends StatefulWidget {
   const RootPage({super.key});
 
@@ -8,7 +10,7 @@ class RootPage extends StatefulWidget {
   State<RootPage> createState() => _RootPageState();
 }
 
-List<Widget> pages = [const HomePages()];
+List<Widget> pages = [const HomePages(), const ProductsScreen()];
 int _currentIndex = 0;
 
 class _RootPageState extends State<RootPage> {

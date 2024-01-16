@@ -75,7 +75,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
                       crossAxisCount: 2,
                       childAspectRatio: 1,
                       crossAxisSpacing: 6,
-                      mainAxisExtent: MediaQuery.of(context).size.height / 3),
+                      mainAxisExtent: MediaQuery.of(context).size.height / 2.7),
                   itemBuilder: (context, index) {
                     return index.isOdd
                         ? Padding(
