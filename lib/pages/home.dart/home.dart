@@ -22,7 +22,7 @@ class HomePages extends StatelessWidget {
         ),
         actions: const [
           Padding(
-            padding: EdgeInsets.only(right: 16.0),
+            padding: EdgeInsets.only(right: 16.0 ,left: 0),
             child: CircleAvatar(
               radius: 20,
               foregroundImage: AssetImage("assets/images/me.jpg"),
